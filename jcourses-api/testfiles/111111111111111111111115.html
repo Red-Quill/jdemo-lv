@@ -1,0 +1,120 @@
+<!--
+- classic exercise and coding interview question
+- This is great problem because it also reveals subject's knowlegde of some basic mathematics.
+We are talking about high-school / college level maths. Knowledge that I admit we don't really need in every day life
+---
+Let's first take look at the problem
+---
+
+Rees, Janet (2002). Fizz Buzz: 101 Spoken Numeracy Games – Ideal for Mental Maths. Learning Development Aids. ISBN 978-1855033528.
+
+-->
+
+<p>
+	Division was the most challenging basic operation in elementary school math classes. Learning division might have been easier if we had used FizzBuzz. FizzBuzz is a mathematical word game to teach children about division and divisibility. It is also a popular coding interview question. It is a brilliant programming problem to give job candidates because it reveals candidates' capabilities in basic programming and basic maths.
+
+	<blockquote>
+		Write a function that when given an integer (n) returns a string that is
+		<ul>
+			<li>"Fizz" if n is divisible by 3,</li>
+			<li>"Buzz" if n is divisible by 5,</li>
+			<li>"FizzBuzz" if n is divisible by both 3 and 5,</li>
+			<li>The number itsel in all other cases.</li>
+		</ul>
+	</blockquote>
+
+	The problem can be expanded by asking the candidate to write a program that, for example, prints all FizzBuzz results for inputs from 0 to 100.
+</p>
+
+<p>
+	
+	We all learned in elementary school that if a number is divisible by another, the remainder of the operation is zero. We can write an algorithm that checks if the remainder when the input (n) divided by 3 and 5 is zero. However, many solutions I've seen have not implemented the function efficiently, revealing a gap in the programmer's knowledge of mathematics. Here's a typical solution in JavaScript and Python.
+
+	<pre class="jblog-code">
+const fizzBuzz = (integer) => {
+	if(typeof(integer) !== "number") throw new Error(`Invalid input type (must be an integer, got ${typeof(integer)})`);
+	if(!Number.isInteger(integer)) throw new Error(`Invalid input value (must be an integer,got ${integer})`);
+	if(integer % 3 === 0 && integer % 5 === 0) return "FizzBuzz";
+	if(integer % 3 === 0) return "Fizz";
+	if(integer % 5 === 0) return "Buzz";
+	return integer.toString();
+};
+	</pre>
+	<pre class="jblog-code">
+def fizzBuzz(integer:int) -> str:
+	if not isinstance(integer,int): raise TypeError(f"Invalid input type (must be an integer, got {type(integer)})")
+	if integer % 3 == 0 and integer % 5 == 0: return "FizzBuzz"
+	if integer % 3 == 0: return "Fizz"
+	if integer % 5 == 0: return "Buzz"
+	return str(integer)
+	</pre>
+
+	I've taken the liberty to use a more meaningful parameter name and to add validation for the argument type. While this solution is human-readable and quite literally matches the question, it is somewhat laborious for the computer. With a deeper understanding of divisibility, the solution can be optimized.
+</p>
+
+<p>
+	If a number is divisible by both number a and number b, it is divisible by their product a×b. If a number is divisible by 3 and 5, it is also divisible by their product 15. The inverse is also true. If a number n is divisible by number a, then n is also divisible by all factors of a. Factors are numbers that can be used to express another number as a product. 3 and 5 are factors of 15. Thus, the FizzBuzz divisibility check can be done with just one operation.
+
+	<pre class="jblog-code">
+if(integer % 15 === 0) return "FizzBuzz";
+	</pre>
+	<pre class="jblog-code">
+if integer % 15 == 0: return "FizzBuzz"
+	</pre>
+</p>
+
+<p>
+	However, there are many ways to further improve and modify the solution. The initial solution still has some unnecessary clutter. In JavaScript and Python integer 0 is considered falsy and all other numbers are considered truthy. So equality operations can be replaced with simpler expressions.
+
+	<pre class="jblog-code">
+const fizzBuzz = (integer) => {
+	if(typeof(integer) !== "number") throw new Error(`Invalid input type (must be an integer, got ${typeof(integer)})`);
+	if(!Number.isInteger(integer)) throw new Error(`Invalid input value (must be an integer,got ${integer})`);
+	if(!(integer % 15)) return "FizzBuzz";
+	if(!(integer % 3)) return "Fizz";
+	if(!(integer % 5)) return "Buzz";
+	return integer.toString();
+};
+	</pre>
+	<pre>
+def fizzBuzz(integer:int) -> str:
+	if not isinstance(integer,int): raise TypeError(f"Invalid input type (must be an integer, got {type(integer)})")
+	if not integer % 15: return "FizzBuzz"
+	if not integer % 3: return "Fizz"
+	if not integer % 5: return "Buzz"
+	return str(integer)
+	</pre>
+</p>
+
+<p>
+	Alternatively, writing a nice one-liner algorithm can avoid the whole division by 15. For production purposes, we could separate the input validator from the algorithm. The algorithm could be used in repetitive and performance-critical tasks where input is reliable and the function in situations where the input is not reliable e.g. in a web application that takes user input.
+
+	<pre class="jblog-code">
+const fizzBuzzAlgorithm = (n) => (n%3 ? "" : "Fizz") + (n%5 ? "" : "Buzz") || n.toString();
+
+const validateInteger = (input) => {
+	if(typeof(input) !== "number") throw new Error(`Invalid input type (must be an integer, got ${typeof(input)})`);
+	if(!Number.isInteger(input)) throw new Error(`Invalid input value (must be an integer,got ${input})`);
+};
+
+const fizzBuzzFunction = (integer) => {
+	validateInteger(integer);
+	return fizzBuzzAlgorithm(integer);
+};
+
+for(n=0; n&lt;=100; n++) console.log(fizzBuzzAlgorithm(n));
+	</pre>
+	<pre class="jblog-code">
+fizzBuzzAlgorithm = lambda n : ("" if n%3 else "Fizz") + ("" if n%5 else "Buzz") or str(n)
+
+def validateInteger(input) -> None:
+	if not isinstance(input,int): raise TypeError(f"Invalid input type (must be an integer, got {type(input)})")
+
+def fizzBuzzFunction(integer) -> None:
+	validateInteger(integer)
+	return fizzBuzzAlgorithm(integer)
+
+for n in range(0,100):
+	print(fizzBuzzAlgorithm(n))
+	</pre>
+</p>

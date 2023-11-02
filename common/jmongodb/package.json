@@ -1,0 +1,21 @@
+{
+  "name": "jmongodb",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarno Parviainen - jarno.parviainen@gmail.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "jutils": "file:../jutils",
+    "mongoose": "^7.5.4",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.4"
+  }
+}

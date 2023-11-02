@@ -1,0 +1,16 @@
+{
+  "name": "jrecaptcha",
+  "version": "0.1.0",
+  "description": "recaptcha helpers",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarno Parviainen - jarno.parviainen@gmail.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "jexception": "file:../jexception",
+    "jhttp-client": "file:../jhttp-client"
+  }
+}

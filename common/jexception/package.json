@@ -1,0 +1,13 @@
+{
+  "name": "jexception",
+  "version": "0.2.0",
+  "description": "",
+  "author": "jarno.parviainen@gmail.com",
+  "license": "UNLICENSED",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type" : "module"
+}

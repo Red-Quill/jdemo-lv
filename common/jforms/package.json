@@ -1,0 +1,27 @@
+{
+  "name": "jforms",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarno Parviainen - jarno.parviainen@gmail.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "react": "file:../../react-shared/node_modules/react"
+  },
+  "exports": {
+    ".": {
+      "import": "./build/index.js"
+    },
+    "./Form.scss": {
+      "import": "./build/Form.scss"
+    }
+  },
+  "devDependencies": {
+    "@types/react": "file:../../react-shared/node_modules/@types/react"
+  }
+}

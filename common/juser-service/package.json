@@ -1,0 +1,27 @@
+{
+  "name": "juser-service",
+  "version": "0.1.0",
+  "description": "",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarno Parviainen - jarno.parviainen@gmail.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "google-auth-library": "^9.1.0",
+    "jemailer": "file:../jemailer",
+    "jexception": "file:../jexception",
+    "jfiles": "file:../jfiles",
+    "jjoi": "file:../jjoi",
+    "jrecaptcha": "file:../jrecaptcha",
+    "juser": "file:../juser",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "jmongodb": "file:../jmongodb"
+  }
+}

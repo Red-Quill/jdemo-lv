@@ -1,0 +1,36 @@
+{
+  "name": "juser-react",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarno Parviainen - jarnontunnit@gmail.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "jexception": "file:../jexception",
+    "jforms": "file:../jforms",
+    "juser": "file:../juser",
+    "jutils": "file:../jutils",
+    "jwt-decode": "^3.1.2",
+    "react": "file:../../react-shared/node_modules/react",
+    "react-google-recaptcha": "^3.1.0",
+    "react-router-dom": "file:../../react-shared/node_modules/react-router-dom"
+  },
+  "devDependencies": {
+    "@types/react": "file:../../react-shared/node_modules/@types/react",
+    "@types/react-google-recaptcha": "^2.1.5",
+    "juser-client": "file:../juser-client"
+  },
+  "exports": {
+    ".": {
+      "import": "./build/index.js"
+    },
+    "./User.scss": {
+      "import": "./build/User.scss"
+    }
+  }
+}

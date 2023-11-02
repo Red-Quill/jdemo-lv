@@ -1,0 +1,14 @@
+
+.juser-terms {
+	position : fixed;
+	width : 100vw;
+	height : 100vh;
+	z-index : 100;
+};
+
+.juser-terms-inner {
+	max-width : 800px;
+	z-index : 101;
+	margin : auto;
+	overflow-x : auto;
+};

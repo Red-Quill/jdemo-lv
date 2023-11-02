@@ -1,0 +1,73 @@
+{
+  "name": "jobwarnings-browser",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@aws-amplify/ui-react": "^5.3.1",
+    "@iconscout/react-unicons": "^2.0.2",
+    "@react-google-maps/api": "^2.19.2",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^17.0.45",
+    "@types/react-dom": "^18.2.7",
+    "aws-amplify": "^5.3.11",
+    "daisyui": "^3.9.2",
+    "i18next-browser-languagedetector": "^7.1.0",
+    "j18next": "file:../common/j18next",
+    "jexception": "file:../common/jexception",
+    "jforms": "file:../common/jforms",
+    "jhttp-client": "file:../common/jhttp-client",
+    "jnavbar-react": "file:../common/jnavbar-react",
+    "jnotifications": "file:../common/jnotifications",
+    "jobreviews": "file:../common/jobreviews",
+    "jrecaptcha": "file:../common/jrecaptcha",
+    "juser": "file:../common/juser",
+    "juser-client": "file:../common/juser-client",
+    "juser-react": "file:../common/juser-react",
+    "jutils": "file:../common/jutils",
+    "react": "file:../react-shared/node_modules/react",
+    "react-daisyui": "^4.1.2",
+    "react-dom": "file:../react-shared/node_modules/react-dom",
+    "react-google-recaptcha": "^3.1.0",
+    "react-router-dom": "file:../react-shared/node_modules/react-router-dom",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^9.1.3",
+    "sass": "^1.66.1",
+    "typescript": "^4.9.5",
+    "use-places-autocomplete": "^4.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "homepage": "/webapp",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "serve": "serve -c ../serve.json -l 3003 ./build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "file:../react-shared/node_modules/@types/react",
+    "@types/react-google-recaptcha": "^2.1.6",
+    "@types/react-router-dom": "^5.3.3"
+  }
+}

@@ -1,0 +1,153 @@
+
+.jnavbar {
+	position : fixed;
+	top : 0;
+	left : 0;
+	z-index: 9;
+	align-items: center;
+	display : block;
+	justify-content : space-between;
+	background-color: #f8f9fa;
+}
+
+.jnavbar-large {
+	flex-direction : row;
+	max-width : 1200px;
+	width : 100%;
+	height : 50px;
+}
+
+.jnavbar-narrow {
+	flex-direction : row;
+	width : 100%;
+	height : 50px;
+}
+
+.jnavbar-short {
+	flex-direction : column;
+	align-items : flex-start;
+	width : 150px;
+	height : 100%;
+}
+
+
+
+.jnavbar-inner {
+	z-index: 10;
+	align-items: center;
+	display : flex;
+	justify-content : space-between;
+}
+
+
+
+.jnavbar-items {
+	display : flex;
+	width: 100;
+	list-style: none;
+	padding : 0.25rem;
+}
+
+.jnavbar-items-item {
+	border-style : solid;
+	border-radius : 5px;
+	border-width : 1px;
+	border-color: lightgray;
+	color : rgb(33, 37, 41);
+	padding-left : 5px;
+	padding-right : 5px;
+	margin-top : 2px;
+	margin-bottom : 2px;
+	margin-left : 0px;
+	margin-right : 0px;
+	background-color : white;
+}
+
+.jnavbar-items-item a {
+	display : block;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 0;
+}
+
+/* */
+
+
+
+.jnavbar-items-large {
+	flex-direction : row;
+}
+
+
+.jnavbar-items-large>li {
+	min-width: 70px;
+	text-align : center;
+}
+
+
+
+
+
+
+.jnavbar-items-narrow {
+	flex-direction : row;
+}
+
+.jnavbar-items-narrow>li {
+	min-width: 70px;
+	text-align : center;
+}
+
+
+
+
+
+
+.jnavbar-items-short {
+	flex-direction : column;
+	align-items : flex-start;
+	width: calc(100% - 10px);
+}
+
+.jnavbar-items-short>li {
+	padding-left : 5px;
+	padding-right : 5px;
+	width: calc(100% - 10px);
+}
+
+.jnavbar-items-short a {
+	display : flex;
+	justify-content: space-between;
+}
+
+.jnavbar-action {
+	cursor: pointer;
+}
+
+.jnavbar-dropdownbutton {
+	cursor: pointer;
+}
+
+.jnavbar-dropdown-items {
+	/*transform : translateX(-50%) translateY(-50%);*/
+	position : absolute;
+	z-index : 11;
+
+	border-width : 1px;
+	border-radius : 5px;
+	border-style : solid;
+	border-color : lightgray;
+
+	padding-left: 2px;
+	padding-right: 2px;
+
+	background-color: #f8f9fa;
+	list-style : none;
+	text-align : left;
+}
+
+
+
+a img {
+  vertical-align: middle;
+}

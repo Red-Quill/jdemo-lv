@@ -1,0 +1,67 @@
+{
+  "name": "jcourses-api",
+  "version": "0.5.0",
+  "description": "jCourses project api",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node bin/jcoursesapi.js",
+    "teststart": "node --enable-source-maps build/bin/jcoursesapi.js --development",
+    "devstart": "nodemon src/app.js --development",
+    "test": "jest --verbose --detectOpenHandles",
+    "testing": "jest --watchAll"
+  },
+  "engines": {
+    "node": "^18.13.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "tmp/*",
+      "build/*"
+    ]
+  },
+  "author": "Jarno Parviainen - jarnontunnit@gmail.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@aws-sdk/client-ssm": "^3.388.0",
+    "@aws-sdk/credential-providers": "^3.389.0",
+    "aws-sdk": "^2.1465.0",
+    "bcrypt": "^5.1.1",
+    "googleapis": "^126.0.1",
+    "jemailer": "file:../common/jemailer",
+    "jmongodb": "file:../common/jmongodb",
+    "juser-service": "file:../common/juser-service",
+    "mock-aws-s3": "^4.0.2",
+    "mongoose": "^7.5.4",
+    "nock": "^13.3.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@types/express": "^4.17.18",
+    "@types/nodemailer": "^6.4.11",
+    "@types/uuid": "^9.0.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^6.2.0",
+    "jcourses": "file:../common/jcourses",
+    "jest": "^29.6.2",
+    "jexception": "file:../common/jexception",
+    "jfiles": "file:../common/jfiles",
+    "jjoi": "file:../common/jjoi",
+    "joi": "^17.10.2",
+    "jsonwebtoken": "^9.0.1",
+    "juser": "file:../common/juser",
+    "jutils": "file:../common/jutils",
+    "nodemailer": "^6.9.5",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "rollup-plugin-ignore": "^1.0.10",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "supertest": "^6.3.3",
+    "uuid": "^9.0.0",
+    "winston": "^3.10.0"
+  },
+  "type": "module"
+}

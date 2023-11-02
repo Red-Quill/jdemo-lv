@@ -1,0 +1,64 @@
+
+.app {
+	position : relative;
+	max-width : 1200px;
+	height : 100vh;
+	margin : 0 auto;
+}
+
+.japp-hide {
+	display : none !important;
+}
+
+@media print {
+	.japp-print-hide, .japp-print-hide * {
+		display : none !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.japp-content {
+	position : absolute;
+	overflow : auto;
+}
+
+/* */
+
+.japp-content-large {
+	height: calc(100% - 50px);
+	width: 100%;
+	margin-top : 50px;
+	padding : 0;
+}
+
+
+
+.japp-content-narrow {
+	height: calc(100vh - 50px);
+	width : 100%;
+	margin-top : 50px;
+	padding : 0;
+}
+
+
+
+.japp-content-short {
+	height : 100%;
+	width: calc(100% - 150px);
+	margin-left : 150px;
+	padding : 0;
+}
+
+
+
+
+
+

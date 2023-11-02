@@ -1,0 +1,18 @@
+{
+  "name": "jemailer",
+  "version": "0.1.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarno Parviainen - jarno.parviainen@gmail.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "googleapis": "^126.0.1",
+    "nodemailer": "^6.9.5"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.11"
+  }
+}

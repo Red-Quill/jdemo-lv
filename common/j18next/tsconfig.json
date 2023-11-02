@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"outDir": "./build",
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports" : true,
+		"allowJs": true,
+		"lib": [
+			"esnext"
+		],
+		"declaration": true,
+		"sourceMap": true
+	},
+	"include": ["./src/**/*"]
+}

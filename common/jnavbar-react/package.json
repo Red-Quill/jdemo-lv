@@ -1,0 +1,29 @@
+{
+  "name": "jnavbar-react",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarno Parviainen - jarnontunnit@gmail.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "react": "file:../../react-shared/node_modules/react",
+    "react-dom": "file:../../react-shared/node_modules/react-dom",
+    "react-router-dom": "file:../../react-shared/node_modules/react-router-dom"
+  },
+  "devDependencies": {
+    "@types/react": "file:../../react-shared/node_modules/@types/react"
+  },
+  "exports": {
+    ".": {
+      "import": "./build/index.js"
+    },
+    "./Form.scss": {
+      "import": "./build/NavBar.scss"
+    }
+  }
+}

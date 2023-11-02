@@ -1,0 +1,22 @@
+{
+  "name": "jobreviews",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarno Parviainen - jarno.parviainen@gmail.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "jexception": "file:../jexception",
+    "jjoi": "file:../jjoi",
+    "jutils": "file:../jutils",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.5"
+  }
+}

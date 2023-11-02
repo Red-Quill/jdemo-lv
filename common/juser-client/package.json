@@ -1,0 +1,19 @@
+{
+  "name": "juser-client",
+  "type": "module",
+  "version": "0.1.0",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarno Parviainen - jarnontunnit@gmail.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "jhttp-client": "file:../jhttp-client",
+    "juser": "file:../juser",
+    "jutils": "file:../jutils",
+    "universal-cookie": "^6.1.0"
+  },
+  "description": ""
+}

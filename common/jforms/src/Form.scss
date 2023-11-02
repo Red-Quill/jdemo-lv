@@ -1,0 +1,42 @@
+
+.jform {
+
+}
+
+.jform-field {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.jform-label {
+	display : inline-block;
+}
+
+.jform-input {
+    display: block;
+    width: 98%; /* Some fucking piece of shit reason this overflows if not 98% */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.jform-button {
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.jform-textarea {
+    width: 98%; /* Some fucking piece of shit reason this overflows if not 98% */
+    resize: vertical;
+}
+
+.jform-error {
+    
+}
+
+// label -->
+// display: inline-block

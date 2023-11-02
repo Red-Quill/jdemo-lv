@@ -1,0 +1,16 @@
+{
+  "name": "jfiles",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarno Parviainen - jarno.parviainen@gmail.com",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/node": "^20.6.0"
+  }
+}

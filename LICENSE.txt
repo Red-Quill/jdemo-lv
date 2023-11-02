@@ -1,0 +1,3 @@
+Copyright (C) 2023 Jarno Parviainen - All Rights Reserved
+Unauthorized copying of this source code is prohibited
+Written by Jarno Parviainen <jarno.parviainen@gmail.com>

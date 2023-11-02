@@ -1,0 +1,14 @@
+{
+	"rewrites": [
+	
+		{ "source": "/webapp/:a", "destination": "/:a" },
+		{ "source": "/webapp/:a/:b", "destination": "/:a/:b" },
+		{ "source": "/webapp/:a/:b/:c", "destination": "/:a/:b/:c" },
+		{ "source": "/api", "destination": "http://localhost\\:3002/api" },
+		{ "source": "/api/:a", "destination": "http://localhost\\:3002/api/:a" },
+		{ "source": "/api/:a/:b", "destination": "http://localhost\\:3002/api/:a/:b" },
+		{ "source": "/api/:a/:b/:c", "destination": "http://localhost\\:3002/api/:a/:b/:c" },
+		{ "source": "/api/:a/:b/:c/:d", "destination": "http://localhost\\:3002/api/:a/:b/:c/:d" },
+		{ "source": "/api/:a/:b/:c/:d/:e", "destination": "http://localhost\\:3002/api/:a/:b/:c/:d/:e" }
+	]
+}

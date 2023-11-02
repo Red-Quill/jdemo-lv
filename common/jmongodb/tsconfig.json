@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"outDir": "./build",
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports" : true,
+		"allowJs": true,
+		"declaration": true,
+		"sourceMap": true,
+	},
+	"include": ["./src/**/*", "../jdynamodb/src/dynamodb-manager.ts"]
+}

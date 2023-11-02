@@ -1,0 +1,17 @@
+{
+  "name": "jutils",
+  "version": "0.2.0",
+  "description": "Utility functions",
+  "author": "jarno.parviainen@gmail.com",
+  "license": "UNLICENSED",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "browser": "build/browser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "dependencies": {
+    "@types/node": "^20.7.0"
+  }
+}

@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'madcambria';
+  src: local('madcambria'), url(./static/madcambria.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'madcambriai';
+  src: local('madcambriai'), url(./static/madcambriai.woff2) format('woff2');
+}
+
+
+
+.courses-catalog-item-link {
+	color : #001aff;
+	cursor : pointer;
+}
+
+
+
+.courses {
+	display: flex;
+	height: 100%;
+	overflow: hidden;
+	font-family : "madcambria";
+	font-size: 1.1rem;
+	line-height: 1.5;
+}
+
+.courses math {
+	font-family : "madcambria";
+	font-size: 1.1rem;
+}
+
+
+
+.courses-course-toc {
+	overflow : auto;
+	list-style-type: none;
+	padding-left : 5px;
+	padding-right : 5px;
+	font-size: 1rem;
+}
+
+.courses-course-toc>ul {
+	list-style-type: none;
+	padding : 0;
+}
+
+.courses-course-toc-large {
+	width : 240px;
+	flex-shrink: 0;
+}
+
+.courses-course-toc-narrow {
+	display : block;
+	position: fixed;
+	top : 50px;
+	left : 0px;
+	margin : 0;
+	padding : 5px;
+	height: calc(100vh - 50px);
+	background-color: white;
+}
+
+.courses-course-toc-short {
+	display : block;
+	position: absolute;
+	top : 0px;
+	left : 0px;
+	margin : 0;
+	padding : 0 5px;
+	height: 100vh;
+	background-color: white;
+}
+
+.courses-course-toc-item {
+
+}
+
+.courses-course-toc-item-link {
+	color : #001aff;
+	cursor : pointer;
+}
+
+.courses-course-toc-sections {
+
+}
+
+.courses-course-toc-sections-item {
+
+}
+
+
+
+.courses-course-chapter {
+	width: 100%;
+	padding : 15px;
+	overflow-y : auto;
+	overflow-x : hidden;
+	background-color: papayawhip;
+	
+}
+
+.courses-course-chapter-large {
+	flex: 1;
+}
+
+.courses-course-chapter-narrow {
+	padding : 5px;
+}
+
+.courses-course-chapter-short {
+	padding : 5px;
+}
+
+
+
+
+
+
+ol.madenumerate-alph {
+	counter-reset: orderedList;
+	counter-increment: orderedList;
+}
+
+ol.madenumerate-alph li::before {
+	content: "";
+	counter-increment: orderedList;
+}
+
+ol.madenumerate-alph li::marker {
+	content: counter(orderedList, lower-alpha) ") ";
+}
+
+
+
+ol.madenumerate-bigroman {
+	counter-reset: orderedList;
+	counter-increment: orderedList;
+}
+
+ol.madenumerate-bigroman li::before {
+	content: "";
+	counter-increment: orderedList;
+}
+
+ol.madenumerate-bigroman li::marker {
+	content: counter(orderedList, upper-roman) ") ";
+}
+
+
+.madexercise {
+	width: 100%;
+	background-color: mistyrose;
+	border-style: solid;
+	border-radius: 7px;
+	border-color: black;
+	border-width: 1px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.madexercise-a {
+	width : 100%;
+}
+
+.madexercise-h {
+	width : 100%;
+}
+
+.madexercise-r {
+	width : 100%;
+}
+
+.madexercise-s {
+	width : 100%;
+}
+
+.madtheory {
+	width: 100%;
+}
+
+
+
+.madexample {
+	width: 100%;
+	background-color: navajowhite;
+	border-radius: 7px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.madaligned>mtr>:nth-child(1) {
+	text-align: right;
+}
+
+.madaligned>mtr>:nth-child(2) {
+	text-align: left;
+}
+
+.madaligned>mtr>:nth-child(3) {
+	text-align: left;
+}
+
+.madaligned>mtr>:nth-child(4) {
+	text-align: left;
+}
+
+
+
+/*
+replace with class selector
+and wrap in div
+*/
+.madmath-block-wrapper {
+	width: 100%;
+	overflow-x: auto;
+}
+
+/* chromium has a bug and it needs at least 5xp (?) top and bottom margin for math to display properly*/
+.madmath-block {
+	width: 100%;
+	margin-top : 6px;
+	margin-bottom : 6px;
+}
+
+.madmath-inline {
+	margin-top : 3px;
+	margin-bottom : 3px;
+}

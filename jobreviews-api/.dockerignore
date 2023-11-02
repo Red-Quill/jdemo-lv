@@ -1,0 +1,11 @@
+#add files here
+#ignoring node_modules works BUT !!!! They are recreated then docker is started
+node_modules
+node_modules/
+node_modules/*
+**/node_modules
+**/node_modules/
+**/node_modules/*
+**/*.js.map
+tmp/
+utils/

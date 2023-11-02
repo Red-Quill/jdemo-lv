@@ -1,0 +1,46 @@
+/*
+Ehdot
+Sitoudun käyttämään tätä palvelua vain mikäli hyväksyn palvelun ehdot ja tiesotuojakäytännöt.
+- joku, "en käytä palvelua, mikäli en ole jonkin seuraavan lainsäädännön piirissä: GDPR, US data protection whatever tai vähintään niitä vastaavan lainsäädännön piirissä"
+Seuraavien maiden kansalaiset ja näissä maissa oleskelevat voivat käyttää palvelua:
+- EU, Schengen, UK, USA, Mexico, Canada
+
+Tietosuoja- ja rekisteriseloste
+
+Mitä tietoja tallennetaan
+- sessiotunniste
+- käyttäjänumero
+- käyttäjänimi
+- sähköpostiosoite
+- Google Id numero
+
+- Käyttäjän kirjoittamat arvostelut
+- Käyttäjän lisäämät työpaikat
+
+Missä tietoja säilytetään
+ - US, MongoDB Atlas
+
+Miten tietoja siirretään
+ - Asiakkaalta AWS:lle USA:han käyttäen end-to-end salausta under EU data privacy framework
+ - AWS to MongoDB atlas via encrypted channels
+
+Kuinka kauan tietoja säilytetään
+- tilin, postauksen, ym poistamisen jälkeen
+- muuten??? esim., kun tili on epäaktiivinen
+
+Mihin tietoja käytetään
+
+Miten tiedot suojataan
+ - siirretään aina salattujen yhteyksien kautta asiakkaan koneelta tietokantaan
+
+ULKOPUOLISET toimijat adSense, google analytics ... esim. linkki
+
+Asiakkaan oikeudet - standardisetti
+
+Erimielisyyksien ratkaiseminen EU/Suomi oikeuden alla
+
+/// ----
+AWS Participates in EU data privacy framework
+MongoDB atlas is gdpr compliant
+
+*/

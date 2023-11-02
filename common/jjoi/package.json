@@ -1,0 +1,20 @@
+{
+  "name": "jjoi",
+  "version": "0.2.0",
+  "description": "joi extension",
+  "author": "jarno.parviainen@gmail.com",
+  "license": "UNLICENSED",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "joi": "^17.9.2",
+    "jutils": "file:../jutils"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^20.8.6"
+  }
+}

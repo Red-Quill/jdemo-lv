@@ -1,0 +1,28 @@
+{
+  "name": "jcourses-client",
+  "version": "0.1.0",
+  "description": "",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarno Parviainen - jarnontunnit@gmail.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "i18next-browser-languagedetector": "^7.1.0",
+    "j18next": "file:../j18next",
+    "jcourses": "file:../jcourses",
+    "jhttp-client": "file:../jhttp-client",
+    "jnotifications": "file:../jnotifications",
+    "juser-client": "file:../juser-client",
+    "jutils": "file:../jutils",
+    "react": "file:../../react-shared/node_modules/react",
+    "react-dom": "file:../../react-shared/node_modules/react-dom"
+  },
+  "devDependencies": {
+    "i18next": "^23.5.1",
+    "jjoi": "file:../jjoi",
+    "juser": "file:../juser"
+  }
+}
